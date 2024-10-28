@@ -48,7 +48,7 @@ public class UserController {
     public String updateUser(@PathVariable Long id, @ModelAttribute User user) {
         user.setId(id); // Устанавливаем ID для обновления
         userService.saveUser(user);
-        return "redirect:/editUser";
+        return "redirect:/users";
     }
 
     // Удаление пользователя

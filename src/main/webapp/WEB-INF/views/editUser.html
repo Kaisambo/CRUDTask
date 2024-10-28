@@ -13,6 +13,12 @@
 <form action="#" th:action="@{/users/edit/{id}(id=${user.id})}" th:object="${user}" method="post">
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" th:value="*{name}" required>
+
+    <label for="name">Name:</label>
+    <input type="text" id="lastname" name="name" th:value="*{lastName}" required>
+
+    <label for="name">Name:</label>
+    <input type="text" id="email" name="name" th:value="*{email}" required>
     <br>
     <input type="submit" value="Update User">
 </form>
